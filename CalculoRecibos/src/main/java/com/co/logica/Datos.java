@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.co.control;
+package com.co.logica;
 
 /**
  *
@@ -11,9 +11,9 @@ package com.co.control;
  */
 public class Datos {
 
-    private int cantidaPersonas;
-    private int cantidadAptos;
-    private int valorRecibo;
+    private  int cantidaPersonas=0;
+    private int cantidadAptos=0;
+    private int valorRecibo=0;
     
     public Datos(){}
 

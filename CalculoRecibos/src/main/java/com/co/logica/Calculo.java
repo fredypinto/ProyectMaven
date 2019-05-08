@@ -5,20 +5,18 @@
  */
 package com.co.logica;
 
-import com.co.control.Datos;
-
 /**
  *
  * @author fpintopi
  */
 public class Calculo {
+    int Resultado ;
 
-    Datos d = new Datos();
-    int Resultado = 0;
+   
 
-    public void calcularValorPorPersona() {
+    public void calcularValorPorPersona(int uno, int dos) {
          //Resultado = d.getValorRecibo() / d.getCantidaPersonas();
-         
-         System.out.println("Metodo"+d.getCantidaPersonas());
+        
+        System.out.println("----<>"+uno+dos);
     }
 }

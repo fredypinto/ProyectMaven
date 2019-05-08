@@ -6,7 +6,7 @@
 package com.co.vista;
 
 import com.co.logica.Calculo;
-import com.co.control.Datos;
+import com.co.logica.Datos;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,16 +16,15 @@ import javax.swing.JOptionPane;
 public class Main {
 
     public static void main(String[] args) {
+        Datos datos;
         Calculo c = new Calculo();
 
         System.out.println("Ingrese datos");
-        int valor = Integer.parseInt(JOptionPane.showInputDialog("Valor"));
-        int numPersona = Integer.parseInt(JOptionPane.showInputDialog("Valor"));
+        datos = new Datos(50, 0, 5);
+        System.out.println("" + datos.getCantidaPersonas());
+//        int valor = Integer.parseInt(JOptionPane.showInputDialog("Valor"));
+//        int numPersona = Integer.parseInt(JOptionPane.showInputDialog("Valor"));
 
-        Datos datos = new Datos();
-        datos.setCantidaPersonas(numPersona);
-        datos.setValorRecibo(valor);
-
-        c.calcularValorPorPersona();
+        c.calcularValorPorPersona(datos.getCantidaPersonas(), datos.getValorRecibo());
     }
 }
